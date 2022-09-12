@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+}
+#check{
+    display:none;
+}
+.checkbtn{
+    font-size: 20px;
+    float: left;
+    line-height: 30px;
+    cursor: pointer;
+    display:none;
+}
+header{
+    background:linear-gradient(55deg,blue,white);
+    width: 100%;
+    height: 100vh;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background-color:lightslategrey;
+    font-size: 1rem;
+}
+.head h1{
+    margin-right: 210px;
+    text-transform: uppercase;
+}
+.head ul li{
+    display: inline-block;
+    margin-top: 12px;
+}
+.head ul li a{
+    text-decoration: none;
+    padding: 14px;
+    text-transform: uppercase;
+    color: black;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.head ul li a:hover{
+    background-color: violet;
+    color:white;
+}
+.head button{
+    width: 10%;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.head button:hover{
+    background: violet;
+    color: white;
+}
+.main{
+    width:100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25vh;
+}
+
+/* <!-- first page --> */
+
+.first-page{
+width: 28%;
+height: 250px;
+box-shadow: 3px 4px 10px black;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+
+}
+.pass{
+    padding: 10px 14px;
+}
+.pass button{
+    float: right;
+    padding: 10px 13px;
+    text-transform: capitalize;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.pass button:hover{
+    background: linear-gradient(black,white);
+    border: 0px;
+    color: white;
+}
+.pass img{
+    border-radius: 50%;
+}
+.img p{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.pass .since{
+    margin-top: 50px;
+    float: right;
+    font-size: 1rem;
+}
+/* <!-- first page end --> */
+
+
+/* <!-- second-page --> */
+.second-page{
+    width: 40%;
+    height: 250px;
+    box-shadow: 4px 4px  10px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fex{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 14px 14px;
+}
+.fex input{
+    border: 0px;
+}
+.fex input:hover{
+    background-color: red;
+    color: aliceblue;
+}
+.pass-2 h1{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border-bottom: 2px solid black;
+}
+.deposit{
+    line-height: 30px;
+}
+.deposit label{
+    font-size: 1rem;
+}
+/* <!-- second-page end--> */
+
+
+/* <!-- third-page start --> */
+.pass-3{
+    padding: 14px 15px;
+}
+.pass-3 h1{
+    float: right;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.pass-3 p{
+    font-size: 16px;
+}
+.pera{
+    margin-top: 130px;
+    font-size: 1rem;
+}
+.user{
+    margin-top: 25px;
+
+}
+/* <!-- third-page end--> */
+
+
+
+
+
+
+
+.last-page{
+    display: none;
+}
+
+
+@media (max-width:1330px) {
+    .main{
+        width: 100%;
+    }
+    .deposit{
+        line-height: 20px;
+    }
+    .pass-2 h1{
+        font-size: 1.5rem;
+    }
+    .fex input{
+        font-size: 10px;
+    }
+    .pass button{
+        padding: 5px 10px;
+    }
+    .pass img{
+        width: 80px;
+        height: 80px;
+        margin-top: 30px;
+    }
+    .img p{
+        margin-left: 5px;
+    }
+    .pass .since{
+        margin-top: 60px;
+       
+    }
+    .head h1{
+        margin-right: 140px;
+    }
+    
+}
+
+
+
+@media (max-width:1017px) {
+    .pass-2 button{
+        font-size: 10px;
+    }
+    .head{
+        padding: 10px 5px;
+        font-size: 12px;
+        width: 100%;
+    }
+  
+    
+}
+
+
+@media (max-width:1020px){
+    .pass-3 h1{
+        float: right;
+        text-transform: capitalize;
+        font-size: 15px;
+    }
+    .pass-3 p{
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+@media (max-width:968px) {
+    .pass-3 input{
+        font-size: 10px;
+    }
+    .head h1{
+        margin-right: 130px;
+    }
+    .head ul li a{
+        padding: 10px;
+     
+    }
+}
+
+
+
+@media (min-width:250px) and (max-width:868px) {
+    .main{
+        display: block;
+        align-items: center;
+
+
+    }
+    
+    .last-page{
+        display: block;
+    }
+    .first-page{
+        width: 80%;
+        
+        }
+        header{
+            width: 100%;
+            height: 270vh;
+        }
+        .second-page{
+            width: 95%;
+            margin-top: 40px;
+        }
+        .last-page{
+            display:none;
+            border: 1px solid black;
+            width: 80%;
+            margin-top: 40px;
+        }
+        .third-page{
+            margin-top:40px ;
+        }
+}
+
+    
+@media (max-width:743px) {
+    nav{
+        display: block;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:white;
+        top: 80px;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        line-height: 50px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: inline-block;
+    }
+    a:hover{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .head h1{
+        margin-right: 0px;
+        margin-top: 14px;
+    }
+    .head button{
+        width: 15%;
+        font-size: 1rem;
+        border-radius: 15px;
+        border: 1px solid black;
+    }
+    header{
+        width: 100%;
+        height: 210vh;
+    }
+   
+        
+    
+}
